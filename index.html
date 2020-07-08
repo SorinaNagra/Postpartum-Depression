@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Postpartum Depression</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">S. Nagra</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="glyphicon glyphicon-baby-formula"></span>
+     
+    Postpartum Depression
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Postpartum Depression</h1>
+
+</div>
+
+
+<p>10% of persons during pregnancy, 13% early postpartum suffer the onset or relapse of mental illness (RNAO 2018). Complication due to complications associated with missed opportunity for treatment in Ontario is an estimated $20 000 000 annually.</p>
+<div id="perinatal-depression" class="section level1">
+<h1>Perinatal Depression</h1>
+<p>Estimated to be one of the most common occurring mental illness. Onset of depression during pregnancy or postpartum period up to a year after childbirth (RNAO, 2018).</p>
+<p>Complications if left untreated/undiagnosed:</p>
+<ul>
+<li>Missed prenatal appointments</li>
+<li>Increased risk preterm labour</li>
+<li>Poor nutrition (Pearlstein, 2008)</li>
+<li>Low infant birth weight</li>
+<li>Alcohol and tobacco use during pregnancy (tobacco to reduce hunger pangs or stress management)</li>
+<li>Suicidal ideation</li>
+<li>Impacts on childhood development (Pearlstein, 2008)
+<ul>
+<li>Elevated cortisol levels</li>
+<li>cognitive impairment</li>
+<li>altered infant immune function</li>
+<li>uterine vascular changes</li>
+</ul></li>
+</ul>
+</div>
+<div id="postpartum-blues" class="section level1">
+<h1>Postpartum Blues</h1>
+<p>A transient emotional/ mood disturbance that occurs in 70% of new mothers (Chow et al, 2013). Onset 1-6 days after birth (Potter et al, 2017). Associated with the rapid depletion of hormones estrogen and progesterone after birth (RNAO, 2018) Symptoms resolve 10 days after childbirth and are usually self-limiting; If symptoms do not resolve in 2 weeks, may indicate postpartum depression (Chow et al, 2013).</p>
+<p>Usually does not inhibit activities of daily living, infant care or cause suicidal ideation (RNAO, 2018). Symptoms:</p>
+<ul>
+<li>Weepiness</li>
+<li>Insomnia</li>
+<li>Anxiety</li>
+<li>poor concentration</li>
+</ul>
+<p>(Potter et al, 2017)</p>
+<p>Clinical presentation may also include (Chow et al, 2013):</p>
+<ul>
+<li>Unpredictable energy</li>
+<li>Insomnia</li>
+<li>Emotional insecurity</li>
+<li>Grieving former self</li>
+<li>Mood swings (weeping to laughing)</li>
+</ul>
+<p>Care includes reassurance, patient education, recognition.</p>
+</div>
+<div id="postpartum-depression" class="section level1">
+<h1>Postpartum Depression</h1>
+<p>One of the most common postpartum complications, over half of cases start prenatally. If left untreated leads to farther further isolation ad feelings of helplessness/ hopelessness in the post partum period.</p>
+<p>Persons with depression do not experience gratification with parenthood, do not adjust well to or experience fulfillment from their role as a patent. They do not bond well with children which impacts early childhood development, increasing the risk of behavioural problems such as increased aggression that can have lasting impacts into adulthood (RNAO, 2018).</p>
+<p>Symptoms:</p>
+<ul>
+<li>Extreme anxiety</li>
+<li>Sense of failure</li>
+<li>Feelings of guilt</li>
+<li>Sleep disturbances</li>
+<li>Appetite disorders</li>
+<li>Excessive concern for child</li>
+<li>Suicidal ideation</li>
+</ul>
+<p>(Potter et al, 2017)</p>
+</div>
+<div id="postpartum-psychosis" class="section level1">
+<h1>Postpartum Psychosis</h1>
+<p>Impacts 0.1-0.5% of persons, acute psychotic event with onset of symptoms in the first 2-4 weeks after birth (RNAO, 2018).</p>
+<ul>
+<li>Delusions/ hallucinations</li>
+<li>Anger towards self/ infant</li>
+<li>Disorganized speech, thought and behaviours</li>
+<li>Confusion</li>
+<li>Intense shifts in emotional states (mood swings)</li>
+<li>Requires psychiatric assessment: risk of maternal suicide, fetal harm, or harm to other children.</li>
+<li>Partner/ family needs to be aware of symptoms and seek mental health services as affected person may be unable to seek mental health services (RNAO, 2018; Chow et al, 2013).</li>
+</ul>
+</div>
+<div id="risk-factors" class="section level1">
+<h1>Risk factors</h1>
+<div id="history-of-mental-illness" class="section level2">
+<h2>History of mental illness</h2>
+<p>History of mental illness and signs of depression and anxiety during pregnancy or postpartum period increases risk for post partum depression (RNAO, 2018). * Clinical presentation of prenatal anxiety: * Agitation * Cognitive disorder * Constant worrying and racing thoughts associated with fetus, role and social functioning * Increased absence from work * Difficulty coping with psychological changes of pregnancy * Increase reporting of deviation in fetal movement * Increased number of perinatal appointments<br />
+* Shortness of breath * Heart palpations * Restlessness * Panic and fear that panic attacks will cause pain and complicate pregnancy * Prenatal anxiety is associated with fetal complications * Premature labour * Premature rupture of membranes (PROM) * Low infant birth weight * Increased incidence cesarian birth Other mental health issues that are associated with increased risk * low self esteem * History of reproductive trauma * Grief related to miscarriage, stillbirth, infant loss</p>
+<p>(RNAO, 2018)</p>
+</div>
+<div id="life-experiences-environmental-factors" class="section level2">
+<h2>Life experiences/ Environmental factors</h2>
+<ul>
+<li>Stressful life events: inadequate social supports, relationship breakdown, income insecurity, incarceration, etc.</li>
+<li>Substance use</li>
+<li>Social determinants of mental health: assess life circumstances and depression (RNAO, 2018).</li>
+</ul>
+</div>
+</div>
+<div id="population" class="section level1">
+<h1>Population</h1>
+<div id="adoptive-parents" class="section level2">
+<h2>Adoptive Parents</h2>
+<p>Depression of adoptive parents comparable to biological mothers when associated with feeling of incompetency in relation to parental role adjustment and infertility (RNAO, 2018).</p>
+</div>
+<div id="breastfeeding-persons" class="section level2">
+<h2>Breastfeeding Persons</h2>
+<p>There is a belief that breastfeeding is somewhat protective against PPD. Clinical evidence is inconsistent.</p>
+</div>
+<div id="immigrants" class="section level2">
+<h2>Immigrants</h2>
+<p>1.5-2-fold increase in risk in comparison to non-immigrant parents.</p>
+<p>More likely to experience impacts of social determinants on mental health associated with low economic status, English language literacy, low decision making power and social impacts of stigma and cultural/ family conflicts with care (RNAO, 2018).</p>
+</div>
+<div id="incarcerated-persons" class="section level2">
+<h2>Incarcerated persons</h2>
+<p>This population experiences social inequity regarding homelessness, addiction, repetitive violent events and poverty. 8-10% of persons incarcerated for non-violent crimes related to addictions and poverty are pregnant and 80% of this population suffers depression.</p>
+<p>Individuals held in prisons may not receive the same prenatal care regarding nutrition, vitamin supplementation, supportive surfaces, and child birthing classes.</p>
+<p>If institutions are not equipped to house child, parent will loose temporary or permanent custody, policy protecting this population may be underdeveloped or not enforced (RNAO, 2018).</p>
+</div>
+<div id="indigenous-population" class="section level2">
+<h2>Indigenous Population</h2>
+<p>1.5 times the risk of developing depressive disorders then the general population. Unique social challenges faced by aboriginal populations, inequities regarding racism, marginalization, poverty and insufficient culturally competent practices. These people often must leave their communities, sociocultural and familial supports to give birth.</p>
+<p>Indigenous spiritual practices that aid in maintaining a healthy mind, body and spirit; healthy relationships, emotional support and culturally competent environment where the individual feels safe and respected can act as protective barriers to pregnancy associated mood disorders (RNAO, 2018).</p>
+</div>
+<div id="transgender-population" class="section level2">
+<h2>Transgender Population</h2>
+<p>High incidence of depressive disorders in this population due to social context and worsen with stigma, judgment and oppression. The interprofessional team mist remain vigilant for suicidal ideation and other disk factors such as loneliness, social support and lack of trained health-care providers (RNAO, 2018).</p>
+</div>
+<div id="male-partners" class="section level2">
+<h2>Male Partners</h2>
+<p>10-25% of male partners suffer paternal depression associated with personal history of depression and anxiety. Risk factors include lack of social support, older age, financial stresses and incongruence of parenting expectations and realities or exclusion from infant bonding. May result in negative relationship with partner or infant and is associated with impacted work performance, alcohol and drug use, anger and cynicism, and somatic symptoms of nausea and headache (RNAO, 2018).</p>
+<p>Adequate integration/ involvement of partner in postpartum care, education and social support groups can act as preventative factors.</p>
+</div>
+</div>
+<div id="nursing-interventions" class="section level1">
+<h1>Nursing Interventions</h1>
+<div id="nursing-management" class="section level2">
+<h2>Nursing Management</h2>
+<p>Assess for history of depression, low self-esteem, poor coping, stressors, emotional stress and psychosocial problems (Chow et al, 2013)</p>
+<ul>
+<li>encourage client to verbalize feelings</li>
+<li>seek help and social support with childcare</li>
+<li>patient education for self management behaviours: nutrition, exercise, and sleep</li>
+<li>encourage participation in support groups, build relationships with other moms</li>
+<li>assist in managing realistic expectations</li>
+</ul>
+</div>
+<div id="screening" class="section level2">
+<h2>Screening</h2>
+<div id="general-survey" class="section level3">
+<h3>General survey</h3>
+<p>Monitor for non-verbal indicators of depression: activity level, fatigue, sleeping habits, verbal/nonverbal indicators or anxiety, ability to concentrate, nutritional status (RNAO, 2018)</p>
+<p>Is the patient undernourished or obese? Are there signs of poor grooming? Slumped posture? Or flattened affect? (Jarvis et al, 2014)</p>
+</div>
+<div id="verbal-indicators-rnao-2018" class="section level3">
+<h3>Verbal indicators (RNAO, 2018)</h3>
+<ul>
+<li>low emery/ lethargy
+<ul>
+<li>“everything is an effort”</li>
+</ul></li>
+<li>low self-esteem:
+<ul>
+<li>“I’m a failure”</li>
+</ul></li>
+<li>Sadness
+<ul>
+<li>“I always want to cry”</li>
+</ul></li>
+<li>Suicidal ideation
+<ul>
+<li>“I think everyone would be better off without me”</li>
+</ul></li>
+<li>Anxiety and regret
+<ul>
+<li>“I think I have made a terrible mistake”</li>
+</ul></li>
+<li>Loss of focus, confusion
+<ul>
+<li>“everything is a fog”</li>
+</ul></li>
+</ul>
+</div>
+<div id="routine-screening-with-validated-tool" class="section level3">
+<h3>Routine Screening With Validated Tool</h3>
+<div id="dsm-5" class="section level4">
+<h4>DSM-5</h4>
+<p>Symptomatic on a near daily bases (most days) over a 2-week period: depression mood, loss pf interest in pleasurable activities (anhedonia) with additional symptoms.</p>
+<ul>
+<li>Alteration in mood: sadness, mood wings, anxiety, fear of being alone with baby/ difficulty coping</li>
+<li>Thoughts: difficulty concentrating, low self-esteem, indecision, excessive worrying suicidal ideation<br />
+</li>
+<li>Psychical health: loss of appetite, changes in psychical appearance, sleep disturbance, tearfulness, and low energy/ inability to preform daily activities</li>
+</ul>
+</div>
+<div id="whooley-scale" class="section level4">
+<h4>Whooley Scale</h4>
+<p>Binary scale (YES/NO) for 2 questions, additional 3rd if yes for the first 2.</p>
+<ul>
+<li>Question 1: During the past month, have you often been bothered by feeling down, depressed, or hopeless?</li>
+<li>Question 2: During the past month have you often been bothered by little interest or pleasure in doing things? * In the event that the person answers “Yes” to either of these questions, a third question can be asked as follows:</li>
+<li>Question 3: Is this something you feel you need or want help with?</li>
+<li>Rule out depression for those that reply no for the first 2 questions</li>
+<li>Positive screen in those who answer yes to one of the first two questions</li>
+<li>General screen for depression</li>
+</ul>
+</div>
+<div id="edinburgh-postnatal-depression-scale" class="section level4">
+<h4>Edinburgh Postnatal Depression Scale</h4>
+<p>Score greater than 10, positive screen, requires assessment with health care provider Score greater than 13 indicates probable depressive symptoms. Does not reflect symptom severity. Not appropriate to use with non-English speakers/ low English literacy. Items 3,4 and 5 are subscales for anxiety screening. (RNAO, 2018)</p>
+</div>
+<div id="maternal-suicide-risk-assessment" class="section level4">
+<h4>Maternal Suicide Risk Assessment</h4>
+<p>Part of perinatal depression assessment, active (self-harm) and passive (not waking up) suicidal thoughts. Assessment should include means of harm, access to weapons, current substance use and history of attempt. (RNAO, 2018)</p>
+</div>
+</div>
+</div>
+<div id="treatment" class="section level2">
+<h2>Treatment</h2>
+</div>
+<div id="medical-management-perinatal-depression" class="section level2">
+<h2>Medical Management Perinatal Depression</h2>
+<p>Dilemma due to potential risks to the fetus and breastfeeding with medication and risks of exposure to untreated disorder (Pearlstein, 2008).</p>
+<p>Support informed decision making with careful consideration for risks and benefits for person and fetus (RNAO, 2018).</p>
+<div id="ssris-snris" class="section level3">
+<h3>SSRIs &amp; SNRIs</h3>
+<p>Selective serotonin reuptake inhibitors (SSRIs) and Serotonin-norepinephrine reuptake inhibitors (SNRIs)</p>
+<p>Medication crosses the Blood-Placental Barrier and increase the risk of neonatal complication (Pearlstein, 2008). * Increased risk * Spontaneous abortion and preterm death * Increased risk fetal seizures * Lower birth weight * Greatest risk with fluoxetine concentrations in comparison to other SSRIs * Younger gestational age * Lower APGAR score</p>
+</div>
+<div id="benzodiazepines" class="section level3">
+<h3>Benzodiazepines</h3>
+<p>Used for anxiety and insomnia .</p>
+<div id="risk" class="section level4">
+<h4>Risk</h4>
+<ul>
+<li>Small increase in risk of oral cleft within utero exposure <a href="https://www.cdc.gov/ncbddd/birthdefects/cleftlip.html" class="uri">https://www.cdc.gov/ncbddd/birthdefects/cleftlip.html</a></li>
+<li>Prematurity</li>
+<li>developmental delay</li>
+<li>low birth weight</li>
+<li>use in third trimester * Floppy infant syndrome: cyanosis, respiratory distress, feeding difficulty, hypothermia, and lethargy * benzodiazepine withdrawal: jerking of extremities, hyperreflexia, hypertonia, restlessness, vomiting, apnea, tumours</li>
+</ul>
+<p>Caution benzodiazepine use with SSRI consider anxiolytic use: monotherapy-shorter half life under the lowest possible dosage</p>
+</div>
+</div>
+<div id="lithium-is-used-for-treatment-of-mania-psychotic-and-severe-depressive-symptoms." class="section level3">
+<h3>Lithium is used for treatment of mania, psychotic and severe depressive symptoms.</h3>
+<ul>
+<li>Increased risk cardiac outcomes and hypotonicity weighted against risk of untreated symptoms</li>
+<li>Increase dosage of lithium required to maintain stable serum levels as pregnancy progresses.</li>
+<li>Reduce dosage approaching delivery to avoid maternal toxicity, monitor serum levels closely postpartum</li>
+</ul>
+<p>(Pearlstein, 2008).</p>
+<p>##Non pharmacologic treatment methods</p>
+<ul>
+<li>Psychotherapy * Moderate exercise improves material well-being * Specific maternal/ fetal precautions can be implemented for the safe use of electroconvulsive therapy in pregnancy</li>
+</ul>
+<p>(Pearlstein, 2008)</p>
+<ul>
+<li>Effective education, use of support groups</li>
+<li>Cognitive behavioural therapy</li>
+<li>Non – directive counseling: assist client in drawing their own conclusions</li>
+</ul>
+</div>
+</div>
+<div id="patient-education" class="section level2">
+<h2>Patient Education</h2>
+<div id="symptoms" class="section level3">
+<h3>Symptoms</h3>
+<p>Patient education should include the person and their partner, family, or support persons when appropriate. Ensure to inform support persons of symptoms of postpartum depression and psychosis, ensure client has realistic expectations (RNAO, 2018).</p>
+</div>
+<div id="self-care-behaviours-regarding-rest-activity-and-relaxation-rnao-2018" class="section level3">
+<h3>Self-Care Behaviours Regarding Rest, Activity, and Relaxation (RNAO, 2018)</h3>
+<ul>
+<li>Nap while he infant is sleeping</li>
+<li>Reduce participation in activities and visitors that are not assisting with infant care</li>
+<li>Eat a balanced diet to increase energy level</li>
+<li>Walking/ pushing baby in stroller for exercise: encourage gradual return of exercise, avoid lifting heavy weights. Associated with increased bleeding.</li>
+<li>Realistic expectations: few months to lose pregnancy weight (Chow et al, 2013)</li>
+</ul>
+</div>
+<div id="sexual-concerns" class="section level3">
+<h3>Sexual Concerns</h3>
+<ul>
+<li>Fluctuation in libido during pregnancy. * First trimester: diminished due to nausea, fatigue, and breast tenderness</li>
+<li>Second trimester * Increased blood flow, increased libido</li>
+<li>Third trimester * Changing positions becomes uncomfortable, lack of sexual activity over fear of causing fetal harm (no complications associated with intercourse but may be advised to avoid any penetration in later months with history of premature labour)</li>
+<li>Postpartum: dryness and perineum sensitivity post partum may cause discomfort. Recommendation to avoid insertion for 6-week postpartum period.</li>
+</ul>
+<p>(Potter et al, 2017)</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1">
+<h1>References:</h1>
+<p>Chow, J., Ateah, C.A., Scott, S.D., Scott Ricci, S., &amp; Kyle T. Canadian maternity and pediatric nursing. (2013). Philadelphia, PA: Wolters Kluwer Health</p>
+<p>Jarvis, C., Browne, A. J., MacDonald-Jenkins, J., &amp; Luctkar-Flude, M. (2014). Physical examination &amp; health assessment (Second ed.). Toronto, ON: Saunders.</p>
+<p>Pearlstein T. (2008). Perinatal depression: treatment options and dilemmas. Journal of psychiatry &amp; neuroscience : JPN, 33(4), 302–318.</p>
+<p>Potter, P.A., Perry, A. G., Stockert, P. Hall, A. M., Astle, B. J., &amp; Duggleby, W. (2017). Canadian fundamentals of nursing (6th ed.) Toronto, ON: Elsevier Mosby</p>
+<p>Registered Nurses Association of Ontario. (2018). Assessment and Interventions for Perinatal Depression. Retrieved from: <a href="https://rnao.ca/sites/rnao-ca/files/bpg/Perinatal_Depression_FINAL_web_0.pdf" class="uri">https://rnao.ca/sites/rnao-ca/files/bpg/Perinatal_Depression_FINAL_web_0.pdf</a></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
